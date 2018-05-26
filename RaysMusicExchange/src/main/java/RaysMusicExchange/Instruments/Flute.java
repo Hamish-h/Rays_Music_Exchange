@@ -1,6 +1,8 @@
 package RaysMusicExchange.Instruments;
 
-public class Flute extends Instrument {
+import RaysMusicExchange.Behaviours.IPlay;
+
+public class Flute extends Instrument implements IPlay{
 
     public Flute(String colour, String type){
         super(colour, type);
@@ -12,5 +14,14 @@ public class Flute extends Instrument {
 
     public String getType() {
         return type;
+    }
+
+    @Override
+    public String outPutData(String data) {
+        return playSound(data);
+    }
+
+    private String playSound(String data) {
+        return playSound(data);
     }
 }
