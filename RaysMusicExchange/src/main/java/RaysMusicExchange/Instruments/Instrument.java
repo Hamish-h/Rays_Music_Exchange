@@ -13,6 +13,11 @@ public class Instrument {
         return colour;
     }
 
+    public String getType() {
+        return type;
+    }
+
+
 }
 
 

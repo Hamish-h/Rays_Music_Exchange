@@ -16,12 +16,8 @@ public class Flute extends Instrument implements IPlay{
         return type;
     }
 
-    @Override
-    public String outPutData(String data) {
-        return playSound(data);
-    }
 
-    private String playSound(String data) {
-        return playSound(data);
-    }
+=
+
+
 }

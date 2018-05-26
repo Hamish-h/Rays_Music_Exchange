@@ -1,5 +1,5 @@
 import RaysMusicExchange.Instruments.Flute;
-import RaysMusicExchange.Instruments.Piano;
+import RaysMusicExchange.Instruments.Instrument;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ public class FluteTest {
 
     @Before
     public void before(){
-        flute = new Flute("Silver", "Treble" );
+        flute = new Flute("Silver", "Treble");
     }
 
     @Test
@@ -23,4 +23,7 @@ public class FluteTest {
     public void hasType(){
         assertEquals("Treble", flute.getType());
     }
+    
+
+
 }
