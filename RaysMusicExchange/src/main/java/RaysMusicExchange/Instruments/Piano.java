@@ -45,4 +45,8 @@ public class Piano extends Instrument {
     public void setSellPrice(int sellPrice) {
         this.sellPrice = sellPrice;
     }
+
+    public String getInstrumentSound(String music) {
+        return music;
+    }
 }

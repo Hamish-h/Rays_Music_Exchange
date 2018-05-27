@@ -1,6 +1,8 @@
 package RaysMusicExchange.Instruments;
 
-public class Guitar extends Instrument {
+import RaysMusicExchange.Behaviours.IPlay;
+
+public class Guitar extends Instrument implements IPlay{
 
     public Guitar(String colour, String type, String item, int buyPrice, int sellPrice) {
         super(colour, type, item, buyPrice, sellPrice);
@@ -44,5 +46,9 @@ public class Guitar extends Instrument {
 
     public void setSellPrice(int sellPrice) {
         this.sellPrice = sellPrice;
+    }
+
+    public String getInstrumentSound(String music) {
+        return music;
     }
 }

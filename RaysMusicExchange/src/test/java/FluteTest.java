@@ -75,4 +75,10 @@ public class FluteTest {
         assertEquals(80, flute.getSellPrice());
     }
 
+    @Test
+    public void canMakeInstrumentSound(){
+        assertEquals("Peep", flute.getInstrumentSound("Peep"));
+    }
+
+
 }

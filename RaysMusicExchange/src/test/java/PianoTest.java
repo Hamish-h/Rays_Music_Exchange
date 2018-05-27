@@ -74,5 +74,10 @@ public class PianoTest {
         piano.setSellPrice(800);
         assertEquals(800, piano.getSellPrice());
     }
+
+    @Test
+    public void canMakeInstrumentSound(){
+        assertEquals("plonk", piano.getInstrumentSound("plonk"));
+    }
 }
 

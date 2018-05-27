@@ -2,7 +2,7 @@ package RaysMusicExchange.Instruments;
 
 import RaysMusicExchange.Behaviours.IPlay;
 
-public class Flute extends Instrument {
+public class Flute extends Instrument implements IPlay{
 
     public Flute(String colour, String type, String item, int buyPrice, int sellPrice) {
         super(colour, type, item, buyPrice, sellPrice);
@@ -27,8 +27,7 @@ public class Flute extends Instrument {
     public int getSellPrice() {
         return sellPrice;
     }
-
-
+    
     public void setColour(String colour) {
         this.colour = colour;
     }
@@ -47,5 +46,9 @@ public class Flute extends Instrument {
 
     public void setSellPrice(int sellPrice) {
         this.sellPrice = sellPrice;
+    }
+
+    public String getInstrumentSound(String music) {
+        return music;
     }
 }
