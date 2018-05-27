@@ -33,7 +33,6 @@ public class Instrument extends Stock{
         return sellPrice;
     }
 
-
 }
 
 

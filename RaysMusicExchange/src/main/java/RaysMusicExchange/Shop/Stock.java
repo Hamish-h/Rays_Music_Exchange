@@ -29,4 +29,5 @@ public class Stock {
     public int getSellPrice() {
         return sellPrice;
     }
+
 }

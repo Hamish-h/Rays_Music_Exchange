@@ -49,4 +49,5 @@ public class Piano extends Instrument {
     public String getInstrumentSound(String music) {
         return music;
     }
+
 }
