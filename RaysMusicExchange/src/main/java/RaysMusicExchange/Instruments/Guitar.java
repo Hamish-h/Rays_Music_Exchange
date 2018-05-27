@@ -26,4 +26,23 @@ public class Guitar extends Instrument {
         return sellPrice;
     }
 
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
+    }
+
+    public void setBuyPrice(int buyPrice) {
+        this.buyPrice = buyPrice;
+    }
+
+    public void setSellPrice(int sellPrice) {
+        this.sellPrice = sellPrice;
+    }
 }
