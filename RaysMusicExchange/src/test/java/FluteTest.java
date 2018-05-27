@@ -20,8 +20,26 @@ public class FluteTest {
     }
 
     @Test
+    public void canChangeColour(){
+        flute.setColour("White");
+        assertEquals("White", flute.getColour());
+    }
+
+    @Test
+    public void canDeleteColour(){
+        flute.setColour(null);
+        assertEquals(null, flute.getColour());
+    }
+
+    @Test
     public void hasType(){
         assertEquals("Treble", flute.getType());
+    }
+
+    @Test
+    public void canChangeType(){
+        flute.setType("Octave");
+        assertEquals("Octave", flute.getType());
     }
 
     @Test
@@ -30,13 +48,31 @@ public class FluteTest {
     }
 
     @Test
+    public void canChangeItem(){
+        flute.setItem("Whistle");
+        assertEquals("Whistle", flute.getItem());
+    }
+
+    @Test
     public void hasBuyPrice(){
         assertEquals(50, flute.getBuyPrice());
     }
 
     @Test
+    public void canChangeBuyPrice(){
+        flute.setBuyPrice(60);
+        assertEquals(60, flute.getBuyPrice());
+    }
+
+    @Test
     public void hasSellPrice(){
         assertEquals(75, flute.getSellPrice());
+    }
+
+    @Test
+    public void canChangeSellPrice(){
+        flute.setSellPrice(80);
+        assertEquals(80, flute.getSellPrice());
     }
 
 }
