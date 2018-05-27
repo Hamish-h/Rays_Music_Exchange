@@ -27,4 +27,14 @@ public class GuitarTest {
     public void hasItem(){
         assertEquals("Guitar", guitar.getItem());
     }
+
+    @Test
+    public void hasBuyPrice(){
+        assertEquals(500, guitar.getBuyPrice());
+    }
+
+    @Test
+    public void hasSellPrice(){
+        assertEquals(750, guitar.getSellPrice());
+    }
 }
