@@ -22,4 +22,21 @@ public class PianoTest {
     public void hasType(){
         assertEquals("Upright", piano.getType());
     }
+
+    @Test
+    public void hasItem(){
+        assertEquals("Piano", piano.getItem());
+    }
+
+    @Test
+    public void hasBuyPrice(){
+        assertEquals(500, piano.getBuyPrice());
+    }
+
+    @Test
+    public void hasSellPrice(){
+        assertEquals(750, piano.getSellPrice());
+    }
+
 }
+

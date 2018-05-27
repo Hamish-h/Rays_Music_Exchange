@@ -11,7 +11,7 @@ public class FluteTest {
 
     @Before
     public void before(){
-        flute = new Flute("Silver", "Treble", "Flute",50, 750);
+        flute = new Flute("Silver", "Treble", "Flute",50, 75);
     }
 
     @Test
@@ -23,7 +23,20 @@ public class FluteTest {
     public void hasType(){
         assertEquals("Treble", flute.getType());
     }
-    
 
+    @Test
+    public void hasItem(){
+        assertEquals("Flute", flute.getItem());
+    }
+
+    @Test
+    public void hasBuyPrice(){
+        assertEquals(50, flute.getBuyPrice());
+    }
+
+    @Test
+    public void hasSellPrice(){
+        assertEquals(75, flute.getSellPrice());
+    }
 
 }

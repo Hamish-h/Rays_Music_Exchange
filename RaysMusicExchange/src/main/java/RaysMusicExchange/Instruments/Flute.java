@@ -4,12 +4,6 @@ import RaysMusicExchange.Behaviours.IPlay;
 
 public class Flute extends Instrument {
 
-
-//    public Flute(String colour, String type){
-//        super(colour, type);
-//    }
-
-
     public Flute(String colour, String type, String item, int buyPrice, int sellPrice) {
         super(colour, type, item, buyPrice, sellPrice);
     }
@@ -20,6 +14,18 @@ public class Flute extends Instrument {
 
     public String getType() {
         return type;
+    }
+
+    public String getItem() {
+        return item;
+    }
+
+    public int getBuyPrice() {
+        return buyPrice;
+    }
+
+    public int getSellPrice() {
+        return sellPrice;
     }
 
 

@@ -13,4 +13,17 @@ public class Guitar extends Instrument {
     public String getType() {
         return type;
     }
+
+    public String getItem() {
+        return item;
+    }
+
+    public int getBuyPrice() {
+        return buyPrice;
+    }
+
+    public int getSellPrice() {
+        return sellPrice;
+    }
+
 }
