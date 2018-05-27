@@ -11,7 +11,7 @@ public class FluteTest {
 
     @Before
     public void before(){
-        flute = new Flute("Silver", "Treble");
+        flute = new Flute("Silver", "Treble", "Flute",50, 750);
     }
 
     @Test
